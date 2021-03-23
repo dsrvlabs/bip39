@@ -113,7 +113,7 @@ function entropyToMnemonic (entropy, wordlist) {
 }
 
 function generateMnemonic (strength, rng, wordlist) {
-  strength = strength || 128
+  strength = strength || 256
   if (strength % 32 !== 0) throw new TypeError(INVALID_ENTROPY)
   rng = rng || randomBytes
 
